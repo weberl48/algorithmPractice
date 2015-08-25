@@ -1,0 +1,12 @@
+var array = ["a", "b", "c", "d", "e", "f", "g"];
+
+function swap(array, A, B) {
+    var x = array[A];
+
+    array[A] = array[B];
+    array[B] = x;
+
+}
+
+ swap(array, 0, 4);
+console.log(array);
