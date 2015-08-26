@@ -1,0 +1,28 @@
+repeat(5);
+
+function repeat(incoming) {
+  if (incoming == 0) {
+    console.log("base case");
+  } else {
+    repeat(incoming -1)
+    console.log('I am at' + incoming);
+  }
+}
+
+var temp = 0;
+var sum = 0
+
+
+function cumulativeAdd(incoming) {
+  while(temp<=incoming)
+{
+    sum+=temp;
+    temp++;
+
+}
+
+  console.log(sum);
+
+}
+
+cumulativeAdd(3)
