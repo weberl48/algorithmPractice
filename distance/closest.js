@@ -28,10 +28,10 @@ function Closest(players, flag) {
   this.flag = flag;
   distance = [];
   players.forEach(function (player) {
-     distance.push(Math.hypot(player.x - flag.x, player.y - flag.y), player.type);
+     distance.push((Math.hypot(player.x - flag.x, player.y - flag.y)) + " " + player.type);
   });
-  console.log(distance.sort());
-  return distance.sort();
+console.log(distance.sort());
+  return "The closest is " + distance[0];
 }
 
 
