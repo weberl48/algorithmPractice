@@ -9,17 +9,39 @@
 
 //write a function that will accept a Roman numeral and return a decimal value.
 
-var numerals = {
-  I:1,
-  V:5,
-  X:10,
-  L:50,
-  C:100,
-  D:500,
-  M:1000,
-}
+var romanNumerals = {
+  'M': 1000,
+  'D': 500,
+  'C': 100,
+  'L': 50,
+  'X': 10,
+  'V': 5,
+  'I': 1
+};
 
 function romeConvert(input) {
-  input.toUpperCase().split("")
-  
+
+  var arabic = 0;
+  var array = [];
+  var formatted = input.toUpperCase().split("")
+
+  for (var i = 0; i < formatted.length; i++) {
+    array.push(romanNumerals[formatted[i]])
+  }
+  for (var j = 0; j < array.length; j++) {
+    if (array[j] < array[j + 1]) {
+      console.log("#*#*#*#*#*#*#*#");
+      arabic = array[j + 1] - array[j]
+      return arabic
+    } else {
+      arabic = array.reduce(function(previousValue, currentValue) {
+          return previousValue + currentValue
+        }
+
+      )
+      return arabic
+    }
+
+  }
+
 }
