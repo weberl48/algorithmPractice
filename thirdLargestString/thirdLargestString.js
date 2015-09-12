@@ -3,10 +3,14 @@ var ThirdGreatest = function (arr) {
     var arr2 = arr.sort(function(a,b){ return b.length - a.length});
     return arr2[2];
 };
-
+var ThirdGreatest = function (arr) {
+    var arr2 = arr.sort(function(a,b){ return b.length - a.length});
+    return arr2[2];
+};
 // The sort() method sorts the elements of an array in place and returns the array.
 
 // compareFunction
 // Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
 
 // if compareFunction is supplied, the array elements are sorted according to the return value of the compare function.
+// Aesthetic fingerstache farm-to-table kitsch, meditation Godard cliche jean shorts crucifix. Flannel church-key irony selvage street art, skateboard fap lumbersexual Austin food truck Echo Park. Asymmetrical Bushwick ugh DIY small batch, Banksy sartorial put a bird on it PBR. Try-hard cronut selfies crucifix Portland gentrify, ennui deep v dreamcatcher craft beer. Master cleanse banjo seitan Godard banh mi, biodiesel crucifix semiotics Portland art party bespoke Pitchfork. Authentic master cleanse Vice post-ironic forage tousled. Cray lomo Brooklyn, Echo Park VHS Portland artisan tattooed XOXO fashion axe synth sriracha vegan Godard Intelligentsia.

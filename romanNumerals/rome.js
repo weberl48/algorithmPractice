@@ -30,7 +30,6 @@ function romeConvert(input) {
   }
   for (var j = 0; j < array.length; j++) {
     if (array[j] < array[j + 1]) {
-      console.log("#*#*#*#*#*#*#*#");
       arabic = array[j + 1] - array[j]
       return arabic
     } else {
